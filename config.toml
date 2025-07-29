@@ -3,6 +3,18 @@
     extended = true
     min = "0.92.0" 
 
+baseURL = "https://saurabhkankriya.github.io/"
+languageCode = 'en-us'
+title = 'Saurabh Jain'
+theme = 'hugo-noir'
+
+# URL handling
+relativeURLs = true
+canonifyURLs = true
+
+# Multilingual configuration
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 [params]
   name = "Saurabh Jain"
   location = "Pune, India"
