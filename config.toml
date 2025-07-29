@@ -9,7 +9,7 @@ title = 'Saurabh Jain'
 theme = 'hugo-noir'
 
 # URL handling
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = true
 
 # Multilingual configuration
