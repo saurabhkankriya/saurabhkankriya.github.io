@@ -1,0 +1,20 @@
+[[blogs]]
+  title = "Building Scalable AI Systems: Lessons from Production"
+  date = "2024-01-20"
+  summary = "Key insights and best practices for building AI systems that scale in production environments"
+  tags = ["AI", "Machine Learning", "System Architecture", "DevOps"]
+  link = "/blogs/building-scalable-ai-systems/"
+
+[[blogs]]
+  title = "Kubernetes Best Practices for Production Workloads"
+  date = "2024-01-18"
+  summary = "Essential Kubernetes patterns and practices for running production workloads at scale"
+  tags = ["Kubernetes", "DevOps", "Cloud Native", "Infrastructure"]
+  link = "/blogs/kubernetes-best-practices/"
+
+[[blogs]]
+  title = "Generative AI in Enterprise: Beyond the Hype"
+  date = "2024-01-15"
+  summary = "Real-world implementation strategies for generative AI in enterprise environments"
+  tags = ["Generative AI", "Enterprise", "Business Strategy", "AI"]
+  link = "/blogs/generative-ai-in-enterprise/"

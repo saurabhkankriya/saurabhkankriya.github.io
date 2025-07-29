@@ -1,0 +1,25 @@
+[[experience]]
+  role = "Generative AI Engineer"
+  company = "Siemens Techology and Services"
+  company_link = "https://www.techsolutions.com" # Add company URL here
+  period = "Dec 2019 - Present"
+  country = "India" # New field for region/country
+  # description = "Longer description of the role..." # Optional detailed description
+  responsibilities = [
+    "Developed and maintained web applications.",
+    "Collaborated with cross-functional teams.",
+    "Led junior developers."
+  ]
+  technologies = ["Go", "Docker", "Kubernetes", "React"]
+
+[[experience]]
+  role = "Senior Software Engineer"
+  company = "Nitor Infotech"
+  # company_link = "" # Omit or leave blank if no link
+  period = "Apr 2015 - Dec 2019"
+  country = "India"
+  responsibilities = [
+    "Contributed to full-stack development projects.",
+    "Participated in code reviews and agile sprints."
+  ]
+  technologies = ["Python", "Django", "PostgreSQL"]

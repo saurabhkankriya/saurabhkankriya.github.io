@@ -3,7 +3,7 @@
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63492&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tags - </title>
+        <title>Building Scalable AI Systems: Lessons from Production - </title>
         
         
         <link rel="apple-touch-icon" sizes="180x180" href="//localhost:63492/favicon_io/apple-touch-icon.png">
@@ -418,89 +418,191 @@
 </script> 
         <main>
             
-<div class="container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold mb-8">Tags</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<div class="max-w-4xl mx-auto px-4 py-12">
+    <article class="bg-bg-primary-light dark:bg-bg-secondary-dark p-8 rounded-lg border border-border-primary-light dark:border-border-primary-dark">
+        <header class="mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-text-primary-light dark:text-text-primary-dark">Building Scalable AI Systems: Lessons from Production</h1>
+            <div class="flex flex-wrap items-center gap-4 text-text-secondary-light dark:text-text-secondary-dark">
+                <time datetime="2024-01-20" class="text-sm">
+                    January 20, 2024
+                </time>
+                
+                <div class="flex flex-wrap gap-2">
+                    
+                    <span class="px-3 py-1 bg-bg-secondary-light dark:bg-bg-tertiary-dark rounded-full text-xs font-medium text-text-secondary-light dark:text-text-secondary-dark border border-border-primary-light dark:border-border-primary-dark">AI</span>
+                    
+                    <span class="px-3 py-1 bg-bg-secondary-light dark:bg-bg-tertiary-dark rounded-full text-xs font-medium text-text-secondary-light dark:text-text-secondary-dark border border-border-primary-light dark:border-border-primary-dark">Machine Learning</span>
+                    
+                    <span class="px-3 py-1 bg-bg-secondary-light dark:bg-bg-tertiary-dark rounded-full text-xs font-medium text-text-secondary-light dark:text-text-secondary-dark border border-border-primary-light dark:border-border-primary-dark">System Architecture</span>
+                    
+                    <span class="px-3 py-1 bg-bg-secondary-light dark:bg-bg-tertiary-dark rounded-full text-xs font-medium text-text-secondary-light dark:text-text-secondary-dark border border-border-primary-light dark:border-border-primary-dark">DevOps</span>
+                    
+                </div>
+                
+            </div>
+            
+            <p class="mt-4 text-lg text-text-secondary-light dark:text-text-secondary-dark italic">Key insights and best practices for building AI systems that scale in production environments</p>
+            
+        </header>
         
-        <div class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
-            <a href="/tags/devops/" class="text-xl font-semibold hover:text-gray-300">
-                DevOps
-            </a>
-            <span class="text-gray-400 ml-2">(2)</span>
+        <div class="prose prose-lg prose-invert max-w-none">
+            <p>Building AI systems that work in a lab environment is one thing; making them scale in production is an entirely different challenge. Over the past few years working with generative AI at Siemens, I&rsquo;ve learned valuable lessons about what it takes to build robust, scalable AI systems.</p>
+<h2 id="the-reality-of-production-ai">The Reality of Production AI</h2>
+<p>When we think about AI systems, we often focus on model accuracy and performance metrics. However, production AI systems require much more than just a well-trained model. They need to handle:</p>
+<ul>
+<li><strong>Variable workloads</strong>: Traffic patterns that fluctuate dramatically</li>
+<li><strong>Data drift</strong>: Real-world data that differs from training data</li>
+<li><strong>Latency requirements</strong>: Sub-second response times for user-facing applications</li>
+<li><strong>Fault tolerance</strong>: Graceful degradation when things go wrong</li>
+</ul>
+<h2 id="key-architecture-principles">Key Architecture Principles</h2>
+<h3 id="1-microservices-for-ai-components">1. Microservices for AI Components</h3>
+<p>Breaking down your AI system into smaller, focused microservices allows for:</p>
+<ul>
+<li>Independent scaling of different components</li>
+<li>Easier debugging and monitoring</li>
+<li>Technology diversity (use the best tool for each job)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Example: Separate services for different AI tasks</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DocumentAnalyzer</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>text_extractor <span style="color:#f92672">=</span> TextExtractionService()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>classifier <span style="color:#f92672">=</span> ClassificationService()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>summarizer <span style="color:#f92672">=</span> SummarizationService()
+</span></span></code></pre></div><h3 id="2-asynchronous-processing">2. Asynchronous Processing</h3>
+<p>Not every AI operation needs to be synchronous. Implementing message queues and background processing can dramatically improve user experience:</p>
+<ul>
+<li>Use Redis or RabbitMQ for job queues</li>
+<li>Implement webhooks for completion notifications</li>
+<li>Provide progress tracking for long-running tasks</li>
+</ul>
+<h3 id="3-model-versioning-and-ab-testing">3. Model Versioning and A/B Testing</h3>
+<p>Production AI systems need robust model management:</p>
+<ul>
+<li>Version your models alongside your code</li>
+<li>Implement canary deployments for new models</li>
+<li>Monitor model performance metrics in real-time</li>
+</ul>
+<h2 id="monitoring-and-observability">Monitoring and Observability</h2>
+<p>Traditional application monitoring isn&rsquo;t enough for AI systems. You need to track:</p>
+<ul>
+<li><strong>Model drift</strong>: How your model&rsquo;s performance changes over time</li>
+<li><strong>Data quality</strong>: Input validation and anomaly detection</li>
+<li><strong>Business metrics</strong>: How AI decisions impact actual outcomes</li>
+</ul>
+<h2 id="challenges-and-solutions">Challenges and Solutions</h2>
+<h3 id="challenge-cold-start-problems">Challenge: Cold Start Problems</h3>
+<p><strong>Solution</strong>: Implement model warming strategies and connection pooling</p>
+<h3 id="challenge-memory-management">Challenge: Memory Management</h3>
+<p><strong>Solution</strong>: Use model sharing and efficient batching strategies</p>
+<h3 id="challenge-debugging-ai-decisions">Challenge: Debugging AI Decisions</h3>
+<p><strong>Solution</strong>: Implement explainability features and comprehensive logging</p>
+<h2 id="looking-forward">Looking Forward</h2>
+<p>The field of production AI is evolving rapidly. Some trends I&rsquo;m excited about:</p>
+<ul>
+<li><strong>Edge AI</strong>: Moving inference closer to data sources</li>
+<li><strong>AutoML for Production</strong>: Automated model retraining and deployment</li>
+<li><strong>AI Observability Tools</strong>: Better monitoring and debugging capabilities</li>
+</ul>
+<p>Building scalable AI systems is as much about software engineering as it is about machine learning. The teams that succeed are those that treat AI as a first-class citizen in their overall system architecture.</p>
+<hr>
+<p><em>What challenges have you faced when scaling AI systems? I&rsquo;d love to hear about your experiences in the comments or reach out to me directly.</em></p>
+
         </div>
-        
-        <div class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
-            <a href="/tags/ai/" class="text-xl font-semibold hover:text-gray-300">
-                AI
-            </a>
-            <span class="text-gray-400 ml-2">(1)</span>
-        </div>
-        
-        <div class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
-            <a href="/tags/business-strategy/" class="text-xl font-semibold hover:text-gray-300">
-                Business Strategy
-            </a>
-            <span class="text-gray-400 ml-2">(1)</span>
-        </div>
-        
-        <div class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
-            <a href="/tags/cloud-native/" class="text-xl font-semibold hover:text-gray-300">
-                Cloud Native
-            </a>
-            <span class="text-gray-400 ml-2">(1)</span>
-        </div>
-        
-        <div class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
-            <a href="/tags/enterprise/" class="text-xl font-semibold hover:text-gray-300">
-                Enterprise
-            </a>
-            <span class="text-gray-400 ml-2">(1)</span>
-        </div>
-        
-        <div class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
-            <a href="/tags/generative-ai/" class="text-xl font-semibold hover:text-gray-300">
-                Generative AI
-            </a>
-            <span class="text-gray-400 ml-2">(1)</span>
-        </div>
-        
-        <div class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
-            <a href="/tags/infrastructure/" class="text-xl font-semibold hover:text-gray-300">
-                Infrastructure
-            </a>
-            <span class="text-gray-400 ml-2">(1)</span>
-        </div>
-        
-        <div class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
-            <a href="/tags/kubernetes/" class="text-xl font-semibold hover:text-gray-300">
-                Kubernetes
-            </a>
-            <span class="text-gray-400 ml-2">(1)</span>
-        </div>
-        
-        <div class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
-            <a href="/tags/llm/" class="text-xl font-semibold hover:text-gray-300">
-                LLM
-            </a>
-            <span class="text-gray-400 ml-2">(1)</span>
-        </div>
-        
-        <div class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
-            <a href="/tags/machine-learning/" class="text-xl font-semibold hover:text-gray-300">
-                Machine Learning
-            </a>
-            <span class="text-gray-400 ml-2">(1)</span>
-        </div>
-        
-        <div class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
-            <a href="/tags/system-architecture/" class="text-xl font-semibold hover:text-gray-300">
-                System Architecture
-            </a>
-            <span class="text-gray-400 ml-2">(1)</span>
-        </div>
-        
-    </div>
+    </article>
 </div>
+
+<style>
+    .prose {
+        color: #4b5563;  
+        font-size: 1.125rem;
+        line-height: 1.8;
+    }
+    html.dark .prose {
+        color: #9ca3af;  
+    }
+    .prose p {
+        color: #4b5563;  
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+    }
+    html.dark .prose p {
+        color: #9ca3af;  
+    }
+    .prose h1, .prose h2, .prose h3, .prose h4 {
+        color: #1f2937;  
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    html.dark .prose h1, html.dark .prose h2, html.dark .prose h3, html.dark .prose h4 {
+        color: #f3f4f6;  
+    }
+    .prose h2 {
+        font-size: 1.5rem;
+        border-bottom: 1px solid #e5e7eb;
+        padding-bottom: 0.5rem;
+    }
+    html.dark .prose h2 {
+        border-bottom-color: #374151;
+    }
+    .prose h3 {
+        font-size: 1.25rem;
+    }
+    .prose code {
+        background-color: #f3f4f6;
+        color: #1f2937;
+        padding: 0.125rem 0.25rem;
+        border-radius: 0.25rem;
+        font-size: 0.9em;
+    }
+    html.dark .prose code {
+        background-color: #374151;
+        color: #f3f4f6;
+    }
+    .prose pre {
+        background-color: #1f2937 !important;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        overflow-x: auto;
+        margin: 1.5rem 0;
+    }
+    .prose ul, .prose ol {
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+    }
+    .prose li {
+        margin: 0.5rem 0;
+    }
+    .prose blockquote {
+        border-left: 4px solid #0284c7;
+        padding-left: 1rem;
+        margin: 1.5rem 0;
+        font-style: italic;
+        color: #6b7280;
+    }
+    html.dark .prose blockquote {
+        border-left-color: #0ea5e9;
+        color: #9ca3af;
+    }
+    .prose a {
+        color: #0284c7;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: text-decoration-color 0.3s ease;
+    }
+    .prose a:hover {
+        text-decoration-color: #0284c7;
+    }
+    html.dark .prose a {
+        color: #0ea5e9;
+    }
+    html.dark .prose a:hover {
+        text-decoration-color: #0ea5e9;
+    }
+</style>
+
 
         </main>
         

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>//localhost:63492/</link>
-    <description>Recent content on </description>
+    <title>Blogs on </title>
+    <link>//localhost:63492/blogs/</link>
+    <description>Recent content in Blogs on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 25 Jan 2024 16:45:00 +0530</lastBuildDate>
-    <atom:link href="//localhost:63492/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:63492/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implementing Generative AI in Enterprise: A Practical Guide</title>
       <link>//localhost:63492/blogs/generative-ai-in-enterprise/</link>
@@ -21,34 +21,6 @@
       <pubDate>Sat, 20 Jan 2024 14:30:00 +0530</pubDate>
       <guid>//localhost:63492/blogs/building-scalable-ai-systems/</guid>
       <description>&lt;p&gt;Building AI systems that work in a lab environment is one thing; making them scale in production is an entirely different challenge. Over the past few years working with generative AI at Siemens, I&amp;rsquo;ve learned valuable lessons about what it takes to build robust, scalable AI systems.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-reality-of-production-ai&#34;&gt;The Reality of Production AI&lt;/h2&gt;&#xA;&lt;p&gt;When we think about AI systems, we often focus on model accuracy and performance metrics. However, production AI systems require much more than just a well-trained model. They need to handle:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About Me</title>
-      <link>//localhost:63492/about/</link>
-      <pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate>
-      <guid>//localhost:63492/about/</guid>
-      <description>&lt;p&gt;Hello! I&amp;rsquo;m &lt;strong&gt;Saurabh Jain&lt;/strong&gt;, a passionate Generative AI Engineer currently working at Siemens Technology and Services in Pune, India. With over 8 years of experience in software development and AI, I specialize in building intelligent systems that solve real-world problems.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-journey&#34;&gt;My Journey&lt;/h2&gt;&#xA;&lt;p&gt;My journey in technology began with a curiosity about how things work and a desire to build solutions that make a difference. Over the years, I&amp;rsquo;ve evolved from a traditional software engineer to specializing in cutting-edge AI technologies, particularly in the generative AI space.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Contact Me</title>
-      <link>//localhost:63492/contact/</link>
-      <pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate>
-      <guid>//localhost:63492/contact/</guid>
-      <description>&lt;h1 id=&#34;lets-connect&#34;&gt;Let&amp;rsquo;s Connect&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m always excited to discuss new opportunities, collaborate on interesting projects, or simply connect with fellow developers and tech enthusiasts.&lt;/p&gt;&#xA;&lt;p&gt;Feel free to reach out through any of the channels below - I&amp;rsquo;d love to hear from you!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Experience</title>
-      <link>//localhost:63492/experience/</link>
-      <pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate>
-      <guid>//localhost:63492/experience/</guid>
-      <description>&lt;h1 id=&#34;professional-experience&#34;&gt;Professional Experience&lt;/h1&gt;&#xA;&lt;p&gt;My career has been focused on building scalable, production-ready systems with a strong emphasis on AI and cloud technologies. Here&amp;rsquo;s my journey so far.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>//localhost:63492/projects/</link>
-      <pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate>
-      <guid>//localhost:63492/projects/</guid>
-      <description>&lt;h1 id=&#34;my-projects&#34;&gt;My Projects&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to my project portfolio! Here you&amp;rsquo;ll find a collection of my work spanning various technologies and domains, from AI systems to cloud infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;Each project represents a unique challenge and learning experience, showcasing my approach to solving real-world problems through technology.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kubernetes in Production: Best Practices from the Trenches</title>

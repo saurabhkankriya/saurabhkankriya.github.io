@@ -1,0 +1,40 @@
+[[honors]]
+  title = "Best Innovation Award"
+  institution = "Tech Excellence Summit 2023"
+  date = "November 2023"
+
+[[honors]]
+  title = "Outstanding Performance Award"
+  institution = "Siemens Technology and Services"
+  date = "December 2022"
+
+[[honors]]
+  title = "Academic Excellence Medal"
+  institution = "University of Mumbai"
+  date = "May 2015"
+
+[[certifications]]
+  title = "AWS Certified Solutions Architect"
+  url = "https://aws.amazon.com/certification/"
+  date = "September 2023"
+
+[[certifications]]
+  title = "Google Cloud Professional Developer"
+  url = "https://cloud.google.com/certification"
+  date = "June 2023"
+
+[[certifications]]
+  title = "Microsoft Azure AI Engineer"
+  url = "https://docs.microsoft.com/en-us/learn/certifications/"
+  date = "March 2023"
+
+[[certifications]]
+  title = "Kubernetes Administrator (CKA)"
+  url = "https://www.cncf.io/certification/cka/"
+  date = "January 2023"
+
+[voluntary]
+  organization = "Code for Community"
+  role = "Technical Mentor"
+  period = "2022 - Present"
+  description = "Mentoring underprivileged students in programming and web development. Organizing coding bootcamps and hackathons to promote digital literacy in rural communities."
