@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on </title>
+    <link>//localhost:63492/categories/</link>
+    <description>Recent content in Categories on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Jan 2024 16:45:00 +0530</lastBuildDate>
+    <atom:link href="//localhost:63492/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI/ML</title>
+      <link>//localhost:63492/categories/ai/ml/</link>
+      <pubDate>Thu, 25 Jan 2024 16:45:00 +0530</pubDate>
+      <guid>//localhost:63492/categories/ai/ml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Business</title>
+      <link>//localhost:63492/categories/business/</link>
+      <pubDate>Thu, 25 Jan 2024 16:45:00 +0530</pubDate>
+      <guid>//localhost:63492/categories/business/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>//localhost:63492/categories/technology/</link>
+      <pubDate>Sat, 20 Jan 2024 14:30:00 +0530</pubDate>
+      <guid>//localhost:63492/categories/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>//localhost:63492/categories/cloud/</link>
+      <pubDate>Wed, 10 Jan 2024 09:15:00 +0530</pubDate>
+      <guid>//localhost:63492/categories/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>//localhost:63492/categories/devops/</link>
+      <pubDate>Wed, 10 Jan 2024 09:15:00 +0530</pubDate>
+      <guid>//localhost:63492/categories/devops/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
