@@ -53,7 +53,7 @@
                 {{ $authorData := index site.Data .Language.Lang "author" }}
                 {{ $author := cond (and $authorData $authorData.author) $authorData.author site.Params }}
                 {{ with $author }}
-                <a href="{{ absLangURL .Site.BaseURL }}" class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors duration-300">
+                <a href="{{ "" | relLangURL }}" class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors duration-300">
                     {{ .name }}
                 </a>
                 {{ end }}
@@ -67,7 +67,7 @@
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
                 {{ range .Site.Menus.main }}
-                <a href="{{ .URL | absURL }}" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">{{ .Name }}</a>
+                <a href="{{ .URL | relLangURL }}" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}text-accent-light dark:text-accent-dark font-semibold{{ end }}">{{ .Name }}</a>
                 {{ end }}
             </nav>
             <div class="hidden md:flex justify-end items-center">
@@ -91,7 +91,7 @@
                                 {{ $translation = index $foundTranslations 0 }}
                             {{ end }}
                             {{ $isCurrentLang := eq .Lang $.Language.Lang }}
-                            <a href="{{ if $translation }}{{ $translation.Permalink }}{{ else }}{{ .Lang | absLangURL }}{{ end }}" 
+                            <a href="{{ if $translation }}{{ $translation.Permalink }}{{ else }}{{ .Lang | relLangURL }}{{ end }}" 
                                class="{{ if $isCurrentLang }}language-active{{ end }} text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
                                 {{ .LanguageName }}
                             </a>
@@ -132,7 +132,7 @@
                                     {{ $translation = index $foundTranslationsMobile 0 }}
                                 {{ end }}
                                 {{ $isCurrentLang := eq .Lang $.Language.Lang }}
-                                <a href="{{ if $translation }}{{ $translation.Permalink }}{{ else }}{{ .Lang | absLangURL }}{{ end }}" 
+                                <a href="{{ if $translation }}{{ $translation.Permalink }}{{ else }}{{ .Lang | relLangURL }}{{ end }}" 
                                    class="{{ if $isCurrentLang }}language-active{{ end }} text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
                                     {{ .LanguageName }}
                                 </a>
@@ -156,7 +156,7 @@
             </div>
             <nav class="flex flex-col p-6 space-y-4">
                 {{ range .Site.Menus.main }}
-                <a href="{{ .URL | absURL }}" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}text-accent-light dark:text-accent-dark font-semibold{{ end }}" data-menu-link>{{ .Name }}</a>
+                <a href="{{ .URL | relLangURL }}" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 {{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}text-accent-light dark:text-accent-dark font-semibold{{ end }}" data-menu-link>{{ .Name }}</a>
                 {{ end }}
             </nav>
             <div class="mt-auto p-6">
@@ -295,4 +295,4 @@
             closeMobileMenu();
         }
     });
-</script> 
+</script>
