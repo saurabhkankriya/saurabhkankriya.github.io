@@ -1,3 +1,72 @@
+/* Beacon Light Animation */
+/* Enhanced Beacon Light Animation */
+.beacon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    position: relative;
+}
+
+.beacon {
+    width: 14px;
+    height: 14px;
+    background: #22c55e;
+    border-radius: 50%;
+    box-shadow: 0 0 16px 6px #22c55e99, 0 0 32px 12px #22c55e33;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    animation: beacon-pulse 1.4s cubic-bezier(0.4,0,0.2,1) infinite;
+}
+
+.beacon::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background: #22c55e44;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+    z-index: 1;
+    animation: beacon-pulse-outer 1.4s cubic-bezier(0.4,0,0.2,1) infinite;
+}
+
+@keyframes beacon-pulse {
+    0% {
+        box-shadow: 0 0 0 0 #22c55e99, 0 0 0 0 #22c55e33;
+        opacity: 1;
+    }
+    50% {
+        box-shadow: 0 0 24px 12px #22c55e99, 0 0 48px 24px #22c55e33;
+        opacity: 0.85;
+    }
+    100% {
+        box-shadow: 0 0 0 0 #22c55e99, 0 0 0 0 #22c55e33;
+        opacity: 1;
+    }
+}
+
+@keyframes beacon-pulse-outer {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.7;
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(2.2);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
