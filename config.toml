@@ -2,3 +2,16 @@
   [module.hugoVersion]
     extended = true
     min = "0.92.0" 
+
+[params]
+  name = "Saurabh Jain"
+  location = "Pune, India"
+  description = "Description ..."
+  profile_image = "/images/your-profile.jpg" # Place in your site's static/images/
+  # Social links
+  github = "https://github.com/saurabhkankriya"
+  twitter = "https://twitter.com/saurabhkankriya"
+  linkedin = "https://www.linkedin.com/in/saurabhkankriya/"
+  # email = "your.email@example.com"
+  # ... other params ...
+
