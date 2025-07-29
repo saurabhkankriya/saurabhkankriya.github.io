@@ -1,19 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Business Strategy on </title>
-    <link>//localhost:63492/tags/business-strategy/</link>
-    <description>Recent content in Business Strategy on </description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 25 Jan 2024 16:45:00 +0530</lastBuildDate>
-    <atom:link href="//localhost:63492/tags/business-strategy/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Implementing Generative AI in Enterprise: A Practical Guide</title>
-      <link>//localhost:63492/blogs/generative-ai-in-enterprise/</link>
-      <pubDate>Thu, 25 Jan 2024 16:45:00 +0530</pubDate>
-      <guid>//localhost:63492/blogs/generative-ai-in-enterprise/</guid>
-      <description>&lt;p&gt;The generative AI revolution is here, and enterprises are racing to harness its power. However, moving from proof-of-concept to production-ready generative AI systems presents unique challenges. Here&amp;rsquo;s what I&amp;rsquo;ve learned from implementing generative AI solutions in enterprise environments.&lt;/p&gt;&#xA;&lt;h2 id=&#34;understanding-the-enterprise-context&#34;&gt;Understanding the Enterprise Context&lt;/h2&gt;&#xA;&lt;h3 id=&#34;why-generative-ai-matters-for-enterprise&#34;&gt;Why Generative AI Matters for Enterprise&lt;/h3&gt;&#xA;&lt;p&gt;Generative AI isn&amp;rsquo;t just about chatbots. In enterprise contexts, it can:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automate content creation&lt;/strong&gt;: Technical documentation, reports, and communications&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Enhance decision-making&lt;/strong&gt;: Data analysis and insight generation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Improve customer experience&lt;/strong&gt;: Personalized support and recommendations&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Accelerate development&lt;/strong&gt;: Code generation and review assistance&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;key-challenges&#34;&gt;Key Challenges&lt;/h3&gt;&#xA;&lt;p&gt;Before diving into implementation, understand these common obstacles:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Business Strategy on</title><link>/tags/business-strategy/</link><description>Recent content in Business Strategy on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 25 Jan 2024 16:45:00 +0530</lastBuildDate><atom:link href="/tags/business-strategy/index.xml" rel="self" type="application/rss+xml"/><item><title>Implementing Generative AI in Enterprise: A Practical Guide</title><link>/blogs/generative-ai-in-enterprise/</link><pubDate>Thu, 25 Jan 2024 16:45:00 +0530</pubDate><guid>/blogs/generative-ai-in-enterprise/</guid><description>&lt;p>The generative AI revolution is here, and enterprises are racing to harness its power. However, moving from proof-of-concept to production-ready generative AI systems presents unique challenges. Here&amp;rsquo;s what I&amp;rsquo;ve learned from implementing generative AI solutions in enterprise environments.&lt;/p>
+&lt;h2 id="understanding-the-enterprise-context">Understanding the Enterprise Context&lt;/h2>
+&lt;h3 id="why-generative-ai-matters-for-enterprise">Why Generative AI Matters for Enterprise&lt;/h3>
+&lt;p>Generative AI isn&amp;rsquo;t just about chatbots. In enterprise contexts, it can:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Automate content creation&lt;/strong>: Technical documentation, reports, and communications&lt;/li>
+&lt;li>&lt;strong>Enhance decision-making&lt;/strong>: Data analysis and insight generation&lt;/li>
+&lt;li>&lt;strong>Improve customer experience&lt;/strong>: Personalized support and recommendations&lt;/li>
+&lt;li>&lt;strong>Accelerate development&lt;/strong>: Code generation and review assistance&lt;/li>
+&lt;/ul>
+&lt;h3 id="key-challenges">Key Challenges&lt;/h3>
+&lt;p>Before diving into implementation, understand these common obstacles:&lt;/p></description></item></channel></rss>
