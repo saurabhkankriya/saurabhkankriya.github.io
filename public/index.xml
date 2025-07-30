@@ -1,42 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>/</link><description>Recent content on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 25 Jan 2024 16:45:00 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Implementing Generative AI in Enterprise: A Practical Guide</title><link>/blogs/generative-ai-in-enterprise/</link><pubDate>Thu, 25 Jan 2024 16:45:00 +0530</pubDate><guid>/blogs/generative-ai-in-enterprise/</guid><description>&lt;p>The generative AI revolution is here, and enterprises are racing to harness its power. However, moving from proof-of-concept to production-ready generative AI systems presents unique challenges. Here&amp;rsquo;s what I&amp;rsquo;ve learned from implementing generative AI solutions in enterprise environments.&lt;/p>
-&lt;h2 id="understanding-the-enterprise-context">Understanding the Enterprise Context&lt;/h2>
-&lt;h3 id="why-generative-ai-matters-for-enterprise">Why Generative AI Matters for Enterprise&lt;/h3>
-&lt;p>Generative AI isn&amp;rsquo;t just about chatbots. In enterprise contexts, it can:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Automate content creation&lt;/strong>: Technical documentation, reports, and communications&lt;/li>
-&lt;li>&lt;strong>Enhance decision-making&lt;/strong>: Data analysis and insight generation&lt;/li>
-&lt;li>&lt;strong>Improve customer experience&lt;/strong>: Personalized support and recommendations&lt;/li>
-&lt;li>&lt;strong>Accelerate development&lt;/strong>: Code generation and review assistance&lt;/li>
-&lt;/ul>
-&lt;h3 id="key-challenges">Key Challenges&lt;/h3>
-&lt;p>Before diving into implementation, understand these common obstacles:&lt;/p></description></item><item><title>Building Scalable AI Systems: Lessons from Production</title><link>/blogs/building-scalable-ai-systems/</link><pubDate>Sat, 20 Jan 2024 14:30:00 +0530</pubDate><guid>/blogs/building-scalable-ai-systems/</guid><description>&lt;p>Building AI systems that work in a lab environment is one thing; making them scale in production is an entirely different challenge. Over the past few years working with generative AI at Siemens, I&amp;rsquo;ve learned valuable lessons about what it takes to build robust, scalable AI systems.&lt;/p>
-&lt;h2 id="the-reality-of-production-ai">The Reality of Production AI&lt;/h2>
-&lt;p>When we think about AI systems, we often focus on model accuracy and performance metrics. However, production AI systems require much more than just a well-trained model. They need to handle:&lt;/p></description></item><item><title>About Me</title><link>/about/</link><pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate><guid>/about/</guid><description>&lt;p>Hello! I&amp;rsquo;m &lt;strong>Saurabh Jain&lt;/strong>, a passionate Generative AI Engineer currently working at Siemens Technology and Services in Pune, India. With over 8 years of experience in software development and AI, I specialize in building intelligent systems that solve real-world problems.&lt;/p>
-&lt;h2 id="my-journey">My Journey&lt;/h2>
-&lt;p>My journey in technology began with a curiosity about how things work and a desire to build solutions that make a difference. Over the years, I&amp;rsquo;ve evolved from a traditional software engineer to specializing in cutting-edge AI technologies, particularly in the generative AI space.&lt;/p></description></item><item><title>Contact Me</title><link>/contact/</link><pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate><guid>/contact/</guid><description>&lt;h1 id="lets-connect">Let&amp;rsquo;s Connect&lt;/h1>
-&lt;p>I&amp;rsquo;m always excited to discuss new opportunities, collaborate on interesting projects, or simply connect with fellow developers and tech enthusiasts.&lt;/p>
-&lt;p>Feel free to reach out through any of the channels below - I&amp;rsquo;d love to hear from you!&lt;/p></description></item><item><title>Experience</title><link>/experience/</link><pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate><guid>/experience/</guid><description>&lt;h1 id="professional-experience">Professional Experience&lt;/h1>
-&lt;p>My career has been focused on building scalable, production-ready systems with a strong emphasis on AI and cloud technologies. Here&amp;rsquo;s my journey so far.&lt;/p></description></item><item><title>Projects</title><link>/projects/</link><pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate><guid>/projects/</guid><description>&lt;h1 id="my-projects">My Projects&lt;/h1>
-&lt;p>Welcome to my project portfolio! Here you&amp;rsquo;ll find a collection of my work spanning various technologies and domains, from AI systems to cloud infrastructure.&lt;/p>
-&lt;p>Each project represents a unique challenge and learning experience, showcasing my approach to solving real-world problems through technology.&lt;/p></description></item><item><title>Kubernetes in Production: Best Practices from the Trenches</title><link>/blogs/kubernetes-best-practices/</link><pubDate>Wed, 10 Jan 2024 09:15:00 +0530</pubDate><guid>/blogs/kubernetes-best-practices/</guid><description>&lt;p>After managing Kubernetes clusters in production for several years, I&amp;rsquo;ve encountered almost every possible way things can go wrong. Here are the key lessons I&amp;rsquo;ve learned that can help you avoid common pitfalls and build more reliable systems.&lt;/p>
-&lt;h2 id="resource-management-the-foundation">Resource Management: The Foundation&lt;/h2>
-&lt;h3 id="always-set-resource-requests-and-limits">Always Set Resource Requests and Limits&lt;/h3>
-&lt;p>One of the biggest mistakes I see is deploying workloads without proper resource constraints:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">apiVersion&lt;/span>: &lt;span style="color:#ae81ff">apps/v1&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">kind&lt;/span>: &lt;span style="color:#ae81ff">Deployment&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">metadata&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">my-app&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">spec&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">template&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">spec&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">containers&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">app&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">image&lt;/span>: &lt;span style="color:#ae81ff">my-app:latest&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">resources&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">requests&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">memory&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;256Mi&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">cpu&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;250m&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">limits&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">memory&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;512Mi&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">cpu&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;500m&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Why this matters:&lt;/strong>&lt;/p></description></item><item><title>My First Post</title><link>/blogs/project/</link><pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate><guid>/blogs/project/</guid><description>&lt;p>Your post content here&amp;hellip;&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://saurabhkankriya.github.io/</link>
+    <description>Recent content on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Jan 2024 16:45:00 +0530</lastBuildDate>
+    <atom:link href="https://saurabhkankriya.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing Generative AI in Enterprise: A Practical Guide</title>
+      <link>https://saurabhkankriya.github.io/blogs/generative-ai-in-enterprise/</link>
+      <pubDate>Thu, 25 Jan 2024 16:45:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/blogs/generative-ai-in-enterprise/</guid>
+      <description>&lt;p&gt;The generative AI revolution is here, and enterprises are racing to harness its power. However, moving from proof-of-concept to production-ready generative AI systems presents unique challenges. Here&amp;rsquo;s what I&amp;rsquo;ve learned from implementing generative AI solutions in enterprise environments.&lt;/p&gt;&#xA;&lt;h2 id=&#34;understanding-the-enterprise-context&#34;&gt;Understanding the Enterprise Context&lt;/h2&gt;&#xA;&lt;h3 id=&#34;why-generative-ai-matters-for-enterprise&#34;&gt;Why Generative AI Matters for Enterprise&lt;/h3&gt;&#xA;&lt;p&gt;Generative AI isn&amp;rsquo;t just about chatbots. In enterprise contexts, it can:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automate content creation&lt;/strong&gt;: Technical documentation, reports, and communications&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Enhance decision-making&lt;/strong&gt;: Data analysis and insight generation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Improve customer experience&lt;/strong&gt;: Personalized support and recommendations&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Accelerate development&lt;/strong&gt;: Code generation and review assistance&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;key-challenges&#34;&gt;Key Challenges&lt;/h3&gt;&#xA;&lt;p&gt;Before diving into implementation, understand these common obstacles:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building Scalable AI Systems: Lessons from Production</title>
+      <link>https://saurabhkankriya.github.io/blogs/building-scalable-ai-systems/</link>
+      <pubDate>Sat, 20 Jan 2024 14:30:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/blogs/building-scalable-ai-systems/</guid>
+      <description>&lt;p&gt;Building AI systems that work in a lab environment is one thing; making them scale in production is an entirely different challenge. Over the past few years working with generative AI at Siemens, I&amp;rsquo;ve learned valuable lessons about what it takes to build robust, scalable AI systems.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-reality-of-production-ai&#34;&gt;The Reality of Production AI&lt;/h2&gt;&#xA;&lt;p&gt;When we think about AI systems, we often focus on model accuracy and performance metrics. However, production AI systems require much more than just a well-trained model. They need to handle:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://saurabhkankriya.github.io/about/</link>
+      <pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/about/</guid>
+      <description>&lt;p&gt;Hello! I&amp;rsquo;m &lt;strong&gt;Saurabh Jain&lt;/strong&gt;, a passionate Generative AI Engineer currently working at Siemens Technology and Services in Pune, India. With over 8 years of experience in software development and AI, I specialize in building intelligent systems that solve real-world problems.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-journey&#34;&gt;My Journey&lt;/h2&gt;&#xA;&lt;p&gt;My journey in technology began with a curiosity about how things work and a desire to build solutions that make a difference. Over the years, I&amp;rsquo;ve evolved from a traditional software engineer to specializing in cutting-edge AI technologies, particularly in the generative AI space.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact Me</title>
+      <link>https://saurabhkankriya.github.io/contact/</link>
+      <pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/contact/</guid>
+      <description>&lt;h1 id=&#34;lets-connect&#34;&gt;Let&amp;rsquo;s Connect&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m always excited to discuss new opportunities, collaborate on interesting projects, or simply connect with fellow developers and tech enthusiasts.&lt;/p&gt;&#xA;&lt;p&gt;Feel free to reach out through any of the channels below - I&amp;rsquo;d love to hear from you!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Experience</title>
+      <link>https://saurabhkankriya.github.io/experience/</link>
+      <pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/experience/</guid>
+      <description>&lt;h1 id=&#34;professional-experience&#34;&gt;Professional Experience&lt;/h1&gt;&#xA;&lt;p&gt;My career has been focused on building scalable, production-ready systems with a strong emphasis on AI and cloud technologies. Here&amp;rsquo;s my journey so far.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://saurabhkankriya.github.io/projects/</link>
+      <pubDate>Mon, 15 Jan 2024 10:30:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/projects/</guid>
+      <description>&lt;h1 id=&#34;my-projects&#34;&gt;My Projects&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to my project portfolio! Here you&amp;rsquo;ll find a collection of my work spanning various technologies and domains, from AI systems to cloud infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;Each project represents a unique challenge and learning experience, showcasing my approach to solving real-world problems through technology.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kubernetes in Production: Best Practices from the Trenches</title>
+      <link>https://saurabhkankriya.github.io/blogs/kubernetes-best-practices/</link>
+      <pubDate>Wed, 10 Jan 2024 09:15:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/blogs/kubernetes-best-practices/</guid>
+      <description>&lt;p&gt;After managing Kubernetes clusters in production for several years, I&amp;rsquo;ve encountered almost every possible way things can go wrong. Here are the key lessons I&amp;rsquo;ve learned that can help you avoid common pitfalls and build more reliable systems.&lt;/p&gt;&#xA;&lt;h2 id=&#34;resource-management-the-foundation&#34;&gt;Resource Management: The Foundation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;always-set-resource-requests-and-limits&#34;&gt;Always Set Resource Requests and Limits&lt;/h3&gt;&#xA;&lt;p&gt;One of the biggest mistakes I see is deploying workloads without proper resource constraints:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;apiVersion&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;apps/v1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;kind&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deployment&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;metadata&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;my-app&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;spec&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;spec&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;containers&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;app&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;image&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;my-app:latest&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;resources&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;requests&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;memory&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;256Mi&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;cpu&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;250m&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;limits&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;memory&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;512Mi&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;cpu&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;500m&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Why this matters:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>https://saurabhkankriya.github.io/blogs/project/</link>
+      <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/blogs/project/</guid>
+      <description>&lt;p&gt;Your post content here&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

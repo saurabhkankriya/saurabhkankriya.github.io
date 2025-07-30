@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on</title><link>/categories/</link><description>Recent content in Categories on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 25 Jan 2024 16:45:00 +0530</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>AI/ML</title><link>/categories/ai/ml/</link><pubDate>Thu, 25 Jan 2024 16:45:00 +0530</pubDate><guid>/categories/ai/ml/</guid><description/></item><item><title>Business</title><link>/categories/business/</link><pubDate>Thu, 25 Jan 2024 16:45:00 +0530</pubDate><guid>/categories/business/</guid><description/></item><item><title>Technology</title><link>/categories/technology/</link><pubDate>Sat, 20 Jan 2024 14:30:00 +0530</pubDate><guid>/categories/technology/</guid><description/></item><item><title>Cloud</title><link>/categories/cloud/</link><pubDate>Wed, 10 Jan 2024 09:15:00 +0530</pubDate><guid>/categories/cloud/</guid><description/></item><item><title>DevOps</title><link>/categories/devops/</link><pubDate>Wed, 10 Jan 2024 09:15:00 +0530</pubDate><guid>/categories/devops/</guid><description/></item><item><title>Tutorials</title><link>/categories/tutorials/</link><pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate><guid>/categories/tutorials/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on </title>
+    <link>https://saurabhkankriya.github.io/categories/</link>
+    <description>Recent content in Categories on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Jan 2024 16:45:00 +0530</lastBuildDate>
+    <atom:link href="https://saurabhkankriya.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI/ML</title>
+      <link>https://saurabhkankriya.github.io/categories/ai/ml/</link>
+      <pubDate>Thu, 25 Jan 2024 16:45:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/categories/ai/ml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Business</title>
+      <link>https://saurabhkankriya.github.io/categories/business/</link>
+      <pubDate>Thu, 25 Jan 2024 16:45:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/categories/business/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>https://saurabhkankriya.github.io/categories/technology/</link>
+      <pubDate>Sat, 20 Jan 2024 14:30:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/categories/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>https://saurabhkankriya.github.io/categories/cloud/</link>
+      <pubDate>Wed, 10 Jan 2024 09:15:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/categories/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>https://saurabhkankriya.github.io/categories/devops/</link>
+      <pubDate>Wed, 10 Jan 2024 09:15:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/categories/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorials</title>
+      <link>https://saurabhkankriya.github.io/categories/tutorials/</link>
+      <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
+      <guid>https://saurabhkankriya.github.io/categories/tutorials/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
