@@ -116,5 +116,60 @@
         {{ if .Site.Params.chatbot_enabled }}
             {{ partial "chatbot" . }}
         {{ end }}
+        
+        <script>
+            function updateExperienceDuration() {
+                const startDate = new Date('2015-04-27');
+                const currentDate = new Date();
+                
+                let years = currentDate.getFullYear() - startDate.getFullYear();
+                let months = currentDate.getMonth() - startDate.getMonth();
+                let days = currentDate.getDate() - startDate.getDate();
+                
+                if (days < 0) {
+                    months--;
+                    const lastDayOfPrevMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+                    days += lastDayOfPrevMonth;
+                }
+                
+                if (months < 0) {
+                    years--;
+                    months += 12;
+                }
+                
+                let experienceText = '';
+                if (years > 0) {
+                    experienceText += years + ' year' + (years > 1 ? 's' : '');
+                }
+                if (months > 0) {
+                    if (experienceText) experienceText += ', ';
+                    experienceText += months + ' month' + (months > 1 ? 's' : '');
+                }
+                if (days > 0) {
+                    if (experienceText) experienceText += ', ';
+                    experienceText += days + ' day' + (days > 1 ? 's' : '');
+                }
+                
+                // Update main page description
+                const experienceElement = document.getElementById('experience-duration');
+                if (experienceElement) {
+                    experienceElement.textContent = experienceText;
+                }
+                
+                // Update about page
+                const aboutExperienceElement = document.getElementById('about-experience-duration');
+                if (aboutExperienceElement) {
+                    aboutExperienceElement.textContent = experienceText;
+                }
+                
+                // Update experience section summary
+                const experienceSummaryElement = document.getElementById('experience-summary');
+                if (experienceSummaryElement) {
+                    experienceSummaryElement.textContent = experienceText;
+                }
+            }
+            
+            document.addEventListener('DOMContentLoaded', updateExperienceDuration);
+        </script>
     </body>
 </html> 
