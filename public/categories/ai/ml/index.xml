@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI/ML on </title>
-    <link>https://saurabhkankriya.github.io/categories/ai/ml/</link>
+    <link>//localhost:1313/categories/ai/ml/</link>
     <description>Recent content in AI/ML on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 25 Jan 2024 16:45:00 +0530</lastBuildDate>
-    <atom:link href="https://saurabhkankriya.github.io/categories/ai/ml/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/categories/ai/ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implementing Generative AI in Enterprise: A Practical Guide</title>
-      <link>https://saurabhkankriya.github.io/blogs/generative-ai-in-enterprise/</link>
+      <link>//localhost:1313/blogs/generative-ai-in-enterprise/</link>
       <pubDate>Thu, 25 Jan 2024 16:45:00 +0530</pubDate>
-      <guid>https://saurabhkankriya.github.io/blogs/generative-ai-in-enterprise/</guid>
+      <guid>//localhost:1313/blogs/generative-ai-in-enterprise/</guid>
       <description>&lt;p&gt;The generative AI revolution is here, and enterprises are racing to harness its power. However, moving from proof-of-concept to production-ready generative AI systems presents unique challenges. Here&amp;rsquo;s what I&amp;rsquo;ve learned from implementing generative AI solutions in enterprise environments.&lt;/p&gt;&#xA;&lt;h2 id=&#34;understanding-the-enterprise-context&#34;&gt;Understanding the Enterprise Context&lt;/h2&gt;&#xA;&lt;h3 id=&#34;why-generative-ai-matters-for-enterprise&#34;&gt;Why Generative AI Matters for Enterprise&lt;/h3&gt;&#xA;&lt;p&gt;Generative AI isn&amp;rsquo;t just about chatbots. In enterprise contexts, it can:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automate content creation&lt;/strong&gt;: Technical documentation, reports, and communications&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Enhance decision-making&lt;/strong&gt;: Data analysis and insight generation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Improve customer experience&lt;/strong&gt;: Personalized support and recommendations&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Accelerate development&lt;/strong&gt;: Code generation and review assistance&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;key-challenges&#34;&gt;Key Challenges&lt;/h3&gt;&#xA;&lt;p&gt;Before diving into implementation, understand these common obstacles:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building Scalable AI Systems: Lessons from Production</title>
-      <link>https://saurabhkankriya.github.io/blogs/building-scalable-ai-systems/</link>
+      <link>//localhost:1313/blogs/building-scalable-ai-systems/</link>
       <pubDate>Sat, 20 Jan 2024 14:30:00 +0530</pubDate>
-      <guid>https://saurabhkankriya.github.io/blogs/building-scalable-ai-systems/</guid>
+      <guid>//localhost:1313/blogs/building-scalable-ai-systems/</guid>
       <description>&lt;p&gt;Building AI systems that work in a lab environment is one thing; making them scale in production is an entirely different challenge. Over the past few years working with generative AI at Siemens, I&amp;rsquo;ve learned valuable lessons about what it takes to build robust, scalable AI systems.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-reality-of-production-ai&#34;&gt;The Reality of Production AI&lt;/h2&gt;&#xA;&lt;p&gt;When we think about AI systems, we often focus on model accuracy and performance metrics. However, production AI systems require much more than just a well-trained model. They need to handle:&lt;/p&gt;</description>
     </item>
   </channel>
