@@ -14,7 +14,6 @@ canonifyURLs = true
 
 # Multilingual configuration
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
 [params]
   name = "Saurabh Jain"
   location = "Pune, India"
