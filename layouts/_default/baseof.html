@@ -111,5 +111,10 @@
             {{ block "main" . }}{{ end }}
         </main>
         {{ partial "footer" . }}
+        
+        <!-- Chatbot Widget -->
+        {{ if .Site.Params.chatbot_enabled }}
+            {{ partial "chatbot" . }}
+        {{ end }}
     </body>
 </html> 

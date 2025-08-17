@@ -24,7 +24,17 @@ defaultContentLanguage = "en"
   twitter = "https://twitter.com/saurabhkankriya"
   linkedin = "https://www.linkedin.com/in/saurabhkankriya/"
   # email = "your.email@example.com"
+  
+  # Chatbot configuration
+  chatbot_enabled = true
+  chatbot_agent_id = "68a2032ada94f86e35e1602a"
+  chatbot_user_id = "saurabhgithub@gmail.com"
+  chatbot_session_id = "68a2032ada94f86e35e1602a-nvrutcc2pnj"
   # ... other params ...
+
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$', '^LYZR_API_KEY$']
 
 [menu]
   [[menu.main]]
