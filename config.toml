@@ -6,7 +6,6 @@
 baseURL = "https://saurabhkankriya.github.io/"
 languageCode = 'en-us'
 title = 'Saurabh Jain'
-theme = 'hugo-noir'
 
 # URL handling
 relativeURLs = false
