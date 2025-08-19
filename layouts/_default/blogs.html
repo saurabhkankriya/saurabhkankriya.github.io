@@ -1,49 +1,65 @@
 {{ define "main" }}
-<div class="w-full md:w-3/4 lg:w-1/2 mx-auto px-4 py-12">
-    <h1 class="text-5xl font-bold mb-12 text-text-primary-light dark:text-text-primary-dark">{{ .Title }}</h1>
+<div class="w-full max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-16 text-center text-text-primary-light dark:text-text-primary-dark">{{ .Title }}</h1>
 
-    <div class="space-y-12 max-w-3xl mx-auto">
+    <div class="relative">
         {{ $pages := .Pages }}
         {{ if not $pages }}
             {{ $pages = where site.RegularPages "Section" "blogs" }}
         {{ end }}
-        {{ range $pages.ByDate.Reverse }}
-        <article class="group border border-border-primary-light dark:border-border-primary-dark rounded-lg p-6 bg-white dark:bg-neutral-800">
-            <p class="text-text-secondary-light dark:text-text-secondary-dark text-sm mb-2">{{ .Date.Format "2006-01-02" }}</p>
-            <a href="{{ .RelPermalink }}" class="block">
-                <h3 class="inline-flex items-center text-xl font-medium text-accent-light dark:text-accent-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-200 mb-3">
-                    {{ .Title }}
-                </h3>
-            </a>
-            {{ with .Description }}
-            <p class="text-text-secondary-light dark:text-text-secondary-dark mb-4 prose">{{ . }}</p>
-            {{ end }}
-            {{ with .Params.tags }}
-            <div class="flex flex-wrap gap-2 mb-2">
-                {{ range . }}
-                {{ if ne . "" }}
-                <span class="px-2 py-1 text-xs bg-bg-primary-light dark:bg-bg-tertiary-dark text-text-secondary-light dark:text-text-secondary-dark border border-border-primary-light dark:border-border-primary-dark rounded-md transition-all duration-300">{{ . }}</span>
-                {{ end }}
-                {{ end }}
+        {{ range $index, $page := $pages.ByDate.Reverse }}
+        <div class="relative pb-6 {{ if not (eq $index (sub (len $pages.ByDate.Reverse) 1)) }}border-l-2 border-border-primary-light dark:border-border-primary-dark ml-24{{ else }}ml-24{{ end }}">
+            <!-- Timeline marker -->
+            <div class="absolute -left-2 w-4 h-4 bg-accent-light dark:bg-accent-dark rounded-full border-4 border-white dark:border-neutral-900"></div>
+            
+            <!-- Content container -->
+            <div class="flex items-center">
+                <!-- Date on the left -->
+                <time class="absolute -left-24 w-20 text-sm font-medium text-accent-light dark:text-accent-dark text-right pr-2">
+                    {{ .Date.Format "Jan 2006" }}
+                </time>
+                
+                <!-- Blog title on the right -->
+                <article class="pl-6 bg-transparent">
+                    <a href="{{ .RelPermalink }}" class="group block">
+                        <h3 class="text-lg font-medium text-text-primary-light dark:text-text-primary-dark group-hover:text-accent-light dark:group-hover:text-accent-dark transition-all duration-300 group-hover:translate-x-2 group-hover:scale-105">
+                            {{ .Title }}
+                        </h3>
+                    </a>
+                </article>
             </div>
-            {{ end }}
-            {{ with .Params.categories }}
-            <div class="flex flex-wrap gap-2">
-                {{ range . }}
-                {{ if ne . "" }}
-                <a href="{{ (printf "/categories/%s/" (urlize .)) | relLangURL }}" class="px-2 py-1 text-xs bg-bg-secondary-light dark:bg-bg-secondary-dark text-text-secondary-light dark:text-text-secondary-dark border border-border-primary-light dark:border-border-primary-dark rounded-md hover:text-text-primary-light dark:hover:text-text-primary-dark transition-all duration-300">{{ . }}</a>
-                {{ end }}
-                {{ end }}
-            </div>
-            {{ end }}
-        </article>
+        </div>
         {{ end }}
     </div>
 </div>
 
 <style>
-    .prose { color: #4b5563; }
-    html.dark .prose { color: #9ca3af; }
-    </style>
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+        .max-w-4xl {
+            max-width: 100%;
+        }
+        
+        .ml-24 {
+            margin-left: 4rem;
+        }
+        
+        .-left-24 {
+            left: -4rem;
+        }
+        
+        .w-20 {
+            width: 3rem;
+        }
+        
+        .pl-6 {
+            padding-left: 1rem;
+        }
+        
+        .pb-6 {
+            padding-bottom: 1rem;
+        }
+    }
+</style>
 
 {{ end }}
