@@ -17,7 +17,7 @@ defaultContentLanguage = "en"
 [params]
   name = "Saurabh Jain"
   location = "Pune, India"
-  description = "Passionate Generative AI Engineer with 10+ years of experience in software development and AI, specializing in building intelligent systems that solve real-world business problems."
+  description = "Customer-focused Generative AI Engineer with 10+ years of experience in software development and AI, specializing in building intelligent systems that solve real-world business problems."
   profile_image = "/images/your-profile.jpg" # Place in your site's static/images/
   # Social links
   github = "https://github.com/saurabhkankriya"
