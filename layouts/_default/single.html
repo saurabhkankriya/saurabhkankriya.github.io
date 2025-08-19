@@ -15,6 +15,13 @@
                     {{ end }}
                 </div>
                 {{ end }}
+                {{ if .Params.categories }}
+                <div class="flex flex-wrap gap-2">
+                    {{ range .Params.categories }}
+                    <a href="{{ (printf "/categories/%s/" (urlize .)) | relLangURL }}" class="px-3 py-1 bg-bg-secondary-light dark:bg-bg-tertiary-dark rounded-full text-xs font-medium text-text-secondary-light dark:text-text-secondary-dark border border-border-primary-light dark:border-border-primary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark">{{ . }}</a>
+                    {{ end }}
+                </div>
+                {{ end }}
             </div>
             {{ if .Params.description }}
             <p class="mt-4 text-lg text-text-secondary-light dark:text-text-secondary-dark italic">{{ .Params.description }}</p>
