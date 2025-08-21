@@ -20,8 +20,12 @@ defaultContentLanguage = "en"
   profile_image = "/images/your-profile.jpg" # Place in your site's static/images/
   # Social links
   github = "https://github.com/saurabhkankriya"
-  twitter = "https://twitter.com/saurabhkankriya"
+  twitter = "https://x.com/saurabhkankriya"
+  twitter_handle = "saurabhkankriya"
   linkedin = "https://www.linkedin.com/in/saurabhkankriya/"
+  linkedin_handle = "saurabhkankriya"
+  discord = "saurabhkankriya"
+  youtube = "https://www.youtube.com/@saurabhkankriya"
   # email = "your.email@example.com"
   
   # Chatbot configuration

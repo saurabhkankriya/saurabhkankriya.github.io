@@ -40,6 +40,18 @@
                         </svg>
                 </a>
                 {{ end }}
+                {{ with .youtube }}
+                <a href="{{ . }}" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark bg-bg-tertiary-light dark:bg-bg-tertiary-dark p-2 rounded-md border border-border-secondary-light dark:border-border-secondary-dark hover:border-border-primary-light dark:hover:border-border-primary-dark transition-all" target="_blank" rel="noopener noreferrer" title="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M23.498 6.186a3.004 3.004 0 0 0-2.116-2.127C19.508 3.5 12 3.5 12 3.5s-7.508 0-9.382.559A3.004 3.004 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.004 3.004 0 0 0 2.116 2.127C4.492 20.5 12 20.5 12 20.5s7.508 0 9.382-.559a3.004 3.004 0 0 0 2.116-2.127C24 15.93 24 12 24 12s0-3.93-.502-5.814M9.75 15.5v-7L16 12z"/></svg>
+                </a>
+                {{ end }}
+                {{ with .twitter }}
+                <a href="{{ . }}" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark bg-bg-tertiary-light dark:bg-bg-tertiary-dark p-2 rounded-md border border-border-secondary-light dark:border-border-secondary-dark hover:border-border-primary-light dark:hover:border-border-primary-dark transition-all" target="_blank" rel="noopener noreferrer" title="X (Twitter)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M18.244 2H21l-7.5 8.568L22.5 22H15l-5.4-6.66L3.6 22H1l8.01-9.161L1.5 2h7.5l5.1 6.3zM16.5 20h2.1L7.2 4H5.1z"/>
+                    </svg>
+                </a>
+                {{ end }}
                 {{ with .linkedin }}
                 <a href="{{ . }}" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark bg-bg-tertiary-light dark:bg-bg-tertiary-dark p-2 rounded-md border border-border-secondary-light dark:border-border-secondary-dark hover:border-border-primary-light dark:hover:border-border-primary-dark transition-all" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2ZM8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12a1.57 1.57 0 1 1 0 3.12Zm12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z"/></svg>
