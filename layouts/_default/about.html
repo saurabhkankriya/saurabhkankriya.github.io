@@ -2,6 +2,35 @@
 <div class="max-w-4xl mx-auto px-4 py-12">
     <h1 class="text-5xl font-bold mb-6 text-text-primary-light dark:text-text-primary-dark">{{ .Title }}</h1>
 
+    {{ $profileImage := site.Params.profile_image }}
+    {{ $name := site.Params.name }}
+    {{ $location := site.Params.location }}
+    {{ $description := site.Params.description }}
+    {{ if $profileImage }}
+    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 bg-bg-primary-light dark:bg-bg-secondary-dark p-6 md:p-8 rounded-lg mb-6 border border-border-primary-light dark:border-border-primary-dark">
+        <div class="w-32 h-32 rounded-full overflow-hidden border border-border-primary-light dark:border-border-primary-dark shadow-lg bg-bg-secondary-light dark:bg-bg-tertiary-dark">
+            <img src="{{ $profileImage }}" alt="{{ $name }} portrait" class="w-full h-full object-cover">
+        </div>
+        <div class="text-center md:text-left space-y-2">
+            {{ if $name }}
+            <div class="text-2xl md:text-3xl font-semibold text-text-primary-light dark:text-text-primary-dark">{{ $name }}</div>
+            {{ end }}
+            {{ if $location }}
+            <div class="flex items-center justify-center md:justify-start gap-2 text-text-secondary-light dark:text-text-secondary-dark text-sm md:text-base">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 12a3 3 0 1 0 0-6a3 3 0 0 0 0 6Z"/>
+                    <path d="M18 10c0 5-6 11-6 11s-6-6-6-11a6 6 0 1 1 12 0"/>
+                </svg>
+                <span>{{ $location }}</span>
+            </div>
+            {{ end }}
+            {{ if $description }}
+            <p class="text-text-secondary-light dark:text-text-secondary-dark text-base md:text-lg max-w-2xl">{{ $description }}</p>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
     <div class="flex flex-col gap-8">
         <div class="flex-grow">
             <div class="bg-bg-primary-light dark:bg-bg-secondary-dark p-8 rounded-lg mb-8 border border-border-primary-light dark:border-border-primary-dark">
