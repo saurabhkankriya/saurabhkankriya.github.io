@@ -82,16 +82,45 @@
         background-color: #374151;
         color: #f3f4f6;
     }
-    .prose pre {
-        background-color: #1f2937 !important;
+    .prose pre,
+    .prose .highlight pre {
+        background-color: #f8fafc !important;
+        color: #0f172a !important;
         border-radius: 0.5rem;
         padding: 1rem;
         overflow-x: auto;
         margin: 1.5rem 0;
     }
-    .prose ul, .prose ol {
+    .prose pre code,
+    .prose .highlight pre code {
+        background: transparent !important;
+        color: inherit !important;
+        padding: 0 !important;
+    }
+    html.dark .prose pre,
+    html.dark .prose .highlight pre {
+        background-color: #0f172a !important;
+        color: #e5e7eb !important;
+    }
+    html.dark .prose pre code,
+    html.dark .prose .highlight pre code {
+        color: inherit !important;
+    }
+    .prose ul,
+    .prose ol {
         margin: 1rem 0;
         padding-left: 1.5rem;
+    }
+    .prose ul {
+        list-style: disc;
+        list-style-position: outside;
+    }
+    .prose ul ul {
+        list-style: circle;
+    }
+    .prose ol {
+        list-style: decimal;
+        list-style-position: outside;
     }
     .prose li {
         margin: 0.5rem 0;
