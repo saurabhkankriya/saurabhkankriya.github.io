@@ -1,41 +1,20 @@
 [[projects]]
-  title = "AI-Powered Document Analysis System"
-  description = "Built an intelligent document processing system using generative AI and computer vision. The system automatically extracts, categorizes, and summarizes key information from various document formats including PDFs, images, and scanned documents."
-  image = "/images/projects/ai-document-system.jpg"
-  link = "https://github.com/saurabhkankriya/ai-document-analyzer"
-  tech = "Python,OpenAI,FastAPI,Docker,PostgreSQL"
+  title = "gafoor"
+  description = "Semi-autonomous coding agent CLI that pairs pydantic_ai with MCP tooling for workspace-aware automation."
+  image = "/images/project_light.png"
+  link = "https://github.com/saurabhkankriya/gafoor"
+  tech = "Python,Node.js,MCP,OpenAI"
 
 [[projects]]
-  title = "Real-time Collaboration Platform"
-  description = "Developed a comprehensive real-time collaboration platform with live editing, video conferencing, and project management features. Built using modern web technologies with a focus on scalability and user experience."
-  image = "/images/projects/collaboration-platform.jpg"
-  link = "https://github.com/saurabhkankriya/collab-platform"
-  tech = "React,Node.js,Socket.io,MongoDB,WebRTC"
+  title = "Google Trends MCP Server"
+  description = "Model Context Protocol server that exposes Google Trends insights through a lightweight API for AI assistants."
+  image = "/images/project_light.png"
+  link = "https://github.com/saurabhkankriya/Google-Trends-MCP-Server"
+  tech = "Python,MCP,Google Trends"
 
 [[projects]]
-  title = "Kubernetes Monitoring Dashboard"
-  description = "Created a comprehensive monitoring and observability dashboard for Kubernetes clusters. Features include real-time metrics visualization, alerting system, and automated scaling recommendations based on workload patterns."
-  image = "/images/projects/k8s-dashboard.jpg"
-  link = "https://github.com/saurabhkankriya/k8s-monitor"
-  tech = "Go,Kubernetes,Prometheus,Grafana,Docker"
-
-[[projects]]
-  title = "Serverless E-commerce API"
-  description = "Built a highly scalable serverless e-commerce backend using cloud-native technologies. Includes payment processing, inventory management, order tracking, and automated email notifications with 99.9% uptime."
-  image = "/images/projects/ecommerce-api.jpg"
-  link = "https://github.com/saurabhkankriya/serverless-ecommerce"
-  tech = "AWS Lambda,DynamoDB,API Gateway,Stripe,SES"
-
-[[projects]]
-  title = "Smart Home IoT Controller"
-  description = "Developed an IoT-based smart home automation system with mobile app control. Features include voice commands, automated scheduling, energy monitoring, and integration with popular smart home devices."
-  image = "/images/projects/smart-home.jpg"
-  link = "https://github.com/saurabhkankriya/smart-home-iot"
-  tech = "Arduino,Raspberry Pi,React Native,MQTT,Firebase"
-
-[[projects]]
-  title = "Machine Learning Model Deployment Pipeline"
-  description = "Created an end-to-end MLOps pipeline for model training, validation, and deployment. Includes automated testing, model versioning, A/B testing capabilities, and monitoring for model drift detection."
-  image = "/images/projects/ml-pipeline.jpg"
-  link = "https://github.com/saurabhkankriya/ml-deployment-pipeline"
-  tech = "Python,MLflow,Kubeflow,TensorFlow,Jenkins"
+  title = "Indian Railways MCP Server"
+  description = "Model Context Protocol server that surfaces Indian Railways data for conversational agents."
+  image = "/images/project_light.png"
+  link = "https://github.com/saurabhkankriya/Indian-Railways-MCP-Server"
+  tech = "Python,MCP,Indian Railways"

@@ -3,6 +3,7 @@ title: "Projects"
 date: 2024-01-15T10:30:00+05:30
 draft: false
 description: "Explore my portfolio of innovative projects and technical solutions"
+layout: projects
 ---
 
 # My Projects
