@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on</title><link>/categories/notes/</link><description>Recent content in Notes on</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 28 Apr 2023 10:30:00 +0530</lastBuildDate><atom:link href="/categories/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>ChatGPT Prompt Engineering for Developers: Course Notes</title><link>/blogs/chatgpt-prompt-engineering-course-notes/</link><pubDate>Fri, 28 Apr 2023 10:30:00 +0530</pubDate><guid>/blogs/chatgpt-prompt-engineering-course-notes/</guid><description>&lt;p&gt;Course link: &lt;a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/"&gt;ChatGPT Prompt Engineering for Developers - DeepLearning.AI&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="resources-mentioned-in-the-course"&gt;Resources mentioned in the course&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/openai/openai-cookbook"&gt;https://github.com/openai/openai-cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://writingprompts.com/bad-grammar-examples/"&gt;https://writingprompts.com/bad-grammar-examples/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pypi.org/project/redlines/"&gt;https://pypi.org/project/redlines/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="meta"&gt;Meta&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The course uses OpenAI&amp;rsquo;s ChatGPT &lt;code&gt;gpt-3.5-turbo&lt;/code&gt; model and the &lt;a href="https://platform.openai.com/docs/guides/chat"&gt;chat completion endpoint&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;OpenAI python package: &lt;a href="https://pypi.org/project/openai/"&gt;https://pypi.org/project/openai/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="chapter-1-introduction"&gt;Chapter 1: Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Two types of Large Language Models (LLMs):
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Base LLM&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Instruction-tuned LLM&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Start with a base LLM trained on large internet text; fine-tune with input/output instructions and RLHF to be helpful, honest, and harmless.&lt;/li&gt;
+&lt;li&gt;Most instructions online target base LLMs; for practical apps, use instruction-tuned services (safer, more aligned).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;💡 Think of talking to a smart person without context. If outputs miss the mark, the instructions/context were unclear. Be explicit.&lt;/p&gt;</description></item></channel></rss>

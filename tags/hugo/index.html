@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hugo - </title>
+        
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="//localhost:1313/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="//localhost:1313/favicon_io/site.webmanifest">        
+        <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" as="style">            
+        <style>
+            html, body {
+                background-color: #FFFFFF; 
+                color: #1f2937; 
+            }
+            html.dark, html.dark body {
+                background-color: #121212; 
+                color: #f3f4f6; 
+            }
+            .border { 
+                border-color: #d4d4d8; 
+            }
+            html.dark .border {
+                border-color: #374151; 
+            }
+            .carousel-item {
+                display: inline-block;
+                margin: 0 1rem;
+            }            
+            .flex {
+                display: flex;
+            }
+            .flex-col {
+                flex-direction: column;
+            }
+            
+            @media (min-width: 768px) {
+                .md\:flex-row {
+                    flex-direction: row;
+                }
+            }
+            
+            .tech-carousel {
+                overflow: hidden;
+                width: 100%;
+                padding: 1rem 0;
+            }
+            
+            .carousel-track {
+                white-space: nowrap;
+            }
+        </style>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <script>
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        </script>
+        <style>
+            :root {
+                color-scheme: light dark;
+            }
+            
+            .tech-icon {
+                filter: grayscale(100%) brightness(200%);
+                transition: all 0.3s ease;
+            }
+            .tech-icon:hover {
+                filter: none;
+            }
+            
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+            
+            .tech-carousel {
+                width: 100%;
+                padding: 1rem 0;
+            }
+            
+            .tech-track {
+                width: fit-content;
+                animation: scroll 20s linear infinite;
+            }
+            
+            .tech-track:hover {
+                animation-play-state: paused;
+            }
+            
+            .tech-slide {
+                float: left;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen bg-bg-primary-light dark:bg-bg-primary-dark text-text-primary-light dark:text-text-primary-dark">
+        
+<head>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .language-switcher {
+            position: relative;
+            display: inline-block;
+        }
+        .language-switcher-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            cursor: pointer;
+        }
+        .language-dropdown {
+            display: none;
+            position: absolute;
+            background-color: var(--bg-secondary);
+            min-width: 120px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            z-index: 1;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .language-switcher:hover .language-dropdown {
+            display: block;
+        }
+        .language-dropdown a {
+            padding: 0.75rem 1rem;
+            display: block;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .language-dropdown a:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        .dark .language-dropdown a:hover {
+            background-color: rgba(255,255,255,0.05);
+        }
+        .language-active {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<header class="py-6 relative">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="flex justify-between items-center">
+                
+                
+                
+                <a href="/" class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors duration-300">
+                    Saurabh Jain
+                </a>
+                
+                
+                <button id="mobile-menu-button" class="md:hidden text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>            
+            
+            <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
+                
+                <a href="/about/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">About</a>
+                
+                <a href="/experience/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">Experience</a>
+                
+                <a href="/projects/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">Projects</a>
+                
+                <a href="/blogs/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">Blogs</a>
+                
+                <a href="/contact/" class="inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 ">Contact Me</a>
+                
+            </nav>
+            <div class="hidden md:flex justify-end items-center">
+                <div class="flex items-center">
+                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">Local Time:</span>
+                    <div id="local-time" class="text-lg text-text-secondary-light dark:text-text-secondary-dark"></div>
+                </div>
+                
+                <div class="language-switcher ml-4">
+                    <div class="language-switcher-btn text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 p-2 rounded-md">
+                        EN
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                    <div class="language-dropdown">
+                        
+                            
+                            
+                            
+                            
+                            <a href="/en" 
+                               class="language-active text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
+                                
+                            </a>
+                        
+                    </div>
+                </div>
+                <button id="theme-toggle-button-desktop" class="ml-4 inline-block text-lg text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 p-2 rounded-md">
+                  <svg id="theme-toggle-dark-icon-desktop" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                    <path d="M21.7519 15.0021C20.597 15.484 19.3296 15.7501 18 15.7501C12.6152 15.7501 8.25 11.3849 8.25 6.00011C8.25 4.67052 8.51614 3.40308 8.99806 2.24817C5.47566 3.71798 3 7.19493 3 11.2501C3 16.6349 7.36522 21.0001 12.75 21.0001C16.8052 21.0001 20.2821 18.5245 21.7519 15.0021Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg id="theme-toggle-light-icon-desktop" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5 hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
+                  </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="mobile-menu" class="fixed inset-0 bg-bg-secondary-light dark:bg-bg-secondary-dark z-50 hidden transition-all duration-300 backdrop-blur-2xl">
+        <div class="flex flex-col h-full">
+            <div class="flex justify-between items-center p-6">
+                <span class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark">Menu</span>
+                <div class="flex items-center gap-4">
+                    
+                    <div class="language-switcher">
+                        <div class="language-switcher-btn text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 flex items-center p-2 rounded-md">
+                            EN
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </div>
+                        <div class="language-dropdown">
+                            
+                                
+                                
+                                
+                                
+                                <a href="/en" 
+                                   class="language-active text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
+                                    
+                                </a>
+                            
+                        </div>
+                    </div>
+                    <button id="theme-toggle-button-mobile" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 flex items-center p-2 rounded-md">
+                      <svg id="theme-toggle-dark-icon-mobile" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                        <path d="M21.7519 15.0021C20.597 15.484 19.3296 15.7501 18 15.7501C12.6152 15.7501 8.25 11.3849 8.25 6.00011C8.25 4.67052 8.51614 3.40308 8.99806 2.24817C5.47566 3.71798 3 7.19493 3 11.2501C3 16.6349 7.36522 21.0001 12.75 21.0001C16.8052 21.0001 20.2821 18.5245 21.7519 15.0021Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <svg id="theme-toggle-light-icon-mobile" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5 hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
+                      </svg>
+                    </button>
+                    <button id="mobile-menu-close" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <nav class="flex flex-col p-6 space-y-4">
+                
+                <a href="/about/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>About</a>
+                
+                <a href="/experience/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>Experience</a>
+                
+                <a href="/projects/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>Projects</a>
+                
+                <a href="/blogs/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>Blogs</a>
+                
+                <a href="/contact/" class="text-xl text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 " data-menu-link>Contact Me</a>
+                
+            </nav>
+            <div class="mt-auto p-6">
+                <div class="flex items-center justify-center">
+                    <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">Local Time:</span>
+                    <div id="mobile-local-time" class="text-lg text-text-secondary-light dark:text-text-secondary-dark"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    
+    function updateLocalTime() {
+        const timeElements = document.querySelectorAll('#local-time, #mobile-local-time');
+        timeElements.forEach(element => {
+            if (element) {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                element.textContent = timeString;
+            }
+        });
+    }
+    updateLocalTime();
+    setInterval(updateLocalTime, 1000);
+
+    
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuLinks = document.querySelectorAll('[data-menu-link]');
+
+    function openMobileMenu() {
+        mobileMenu.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; 
+    }
+
+    function closeMobileMenu() {
+        mobileMenu.classList.add('hidden');
+        document.body.style.overflow = ''; 
+    }
+
+    mobileMenuButton.addEventListener('click', openMobileMenu);
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+
+    
+    menuLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    
+    const themeToggleBtnDesktop = document.getElementById('theme-toggle-button-desktop');
+    const themeToggleDarkIconDesktop = document.getElementById('theme-toggle-dark-icon-desktop');
+    const themeToggleLightIconDesktop = document.getElementById('theme-toggle-light-icon-desktop');
+
+    const themeToggleBtnMobile = document.getElementById('theme-toggle-button-mobile');
+    const themeToggleDarkIconMobile = document.getElementById('theme-toggle-dark-icon-mobile');
+    const themeToggleLightIconMobile = document.getElementById('theme-toggle-light-icon-mobile');
+
+    
+    function updateIcons(isDarkMode) {
+        if (themeToggleDarkIconDesktop && themeToggleLightIconDesktop) {
+            if (isDarkMode) {
+                themeToggleLightIconDesktop.classList.remove('hidden');
+                themeToggleDarkIconDesktop.classList.add('hidden');
+            } else {
+                themeToggleLightIconDesktop.classList.add('hidden');
+                themeToggleDarkIconDesktop.classList.remove('hidden');
+            }
+        }
+        if (themeToggleDarkIconMobile && themeToggleLightIconMobile) {
+            if (isDarkMode) {
+                themeToggleLightIconMobile.classList.remove('hidden');
+                themeToggleDarkIconMobile.classList.add('hidden');
+            } else {
+                themeToggleLightIconMobile.classList.add('hidden');
+                themeToggleDarkIconMobile.classList.remove('hidden');
+            }
+        }
+    }
+
+    
+    function applyTheme(isDarkMode) {
+        if (isDarkMode) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        }
+        updateIcons(isDarkMode);
+    }
+
+    
+    let initialIsDarkMode = false;
+    if (localStorage.getItem('color-theme') === 'dark' || 
+        (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        initialIsDarkMode = true;
+    }
+    
+    if (initialIsDarkMode && !document.documentElement.classList.contains('dark')) {
+         document.documentElement.classList.add('dark');
+    }
+    applyTheme(initialIsDarkMode); 
+
+    
+    function themeToggleClickHandler() {
+        const isCurrentlyDark = document.documentElement.classList.contains('dark');
+        applyTheme(!isCurrentlyDark); 
+        
+        
+        if (window.innerWidth < 768) {
+            closeMobileMenu();
+        }
+    }
+
+    if (themeToggleBtnDesktop) {
+        themeToggleBtnDesktop.addEventListener('click', themeToggleClickHandler);
+    }
+    if (themeToggleBtnMobile) {
+        themeToggleBtnMobile.addEventListener('click', themeToggleClickHandler);
+    }
+    
+    
+    mobileMenu.addEventListener('click', function(event) {
+        
+        if (event.target === mobileMenu) {
+            closeMobileMenu();
+        }
+    });
+    
+    
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+            closeMobileMenu();
+        }
+    });
+</script>
+
+        <main>
+            
+<div class="container mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-8">Hugo</h1>
+    <div class="space-y-6">
+        
+        <article class="border border-gray-700 rounded-lg p-6 bg-[#1a1a1a]">
+            <h2 class="text-2xl font-semibold mb-2">
+                <a href="/blogs/project/" class="hover:text-gray-300">My First Post</a>
+            </h2>
+            
+            <p class="text-gray-400">A brief description of your post for SEO and previews.</p>
+            
+        </article>
+        
+    </div>
+</div>
+
+        </main>
+        
+<footer class="mt-32 text-center">
+    <div class="max-w-3xl mx-auto">
+        <div class="border-t border-border-primary-light dark:border-border-primary-dark pt-5">
+            <div class="flex flex-col items-center justify-center gap-2">
+                                
+                
+                
+                <p class="text-text-secondary-light dark:text-text-secondary-dark text-xm ">© 2025 Saurabh Jain</p>
+                <p class="text-text-secondary-light dark:text-text-secondary-dark text-xm pb-12">Built using <a href="https://gohugo.io/" target="_blank" class="animated-link text-accent-light dark:text-accent-dark hover:text-text-primary-light dark:hover:text-text-primary-dark">Hugo</a>. Take a look at my <a href="https://github.com/saurabhkankriya" target="_blank" class="animated-link text-accent-light dark:text-accent-dark hover:text-text-primary-light dark:hover:text-text-primary-dark">GitHub</a></p>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .animated-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .animated-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        background-color: #0284c7;  
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .animated-link:hover::after {
+        width: 100%;
+    }
+    html.dark .animated-link::after {
+        background-color: #0ea5e9;  
+    }
+</style> 
+        
+        
+        
+            
+<div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
+    
+    <button id="chat-toggle" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-lg transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300">
+        <svg id="chat-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+    </button>
+
+    
+    <div id="chat-window" class="hidden absolute bottom-16 right-0 w-80 h-96 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-600 flex flex-col">
+        
+        <div class="bg-blue-600 text-white p-4 rounded-t-lg">
+            <h3 class="font-semibold">Chat with Saurabh</h3>
+            <p class="text-sm opacity-90">Ask me anything about my work!</p>
+        </div>
+
+        
+        <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3">
+            <div class="flex">
+                <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-3 max-w-xs">
+                    <p class="text-sm">Hello! I'm Saurabh's AI assistant. Feel free to ask me about his experience, projects, or expertise!</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="p-4 border-t border-gray-200 dark:border-gray-600">
+            <div class="flex space-x-2">
+                <input 
+                    type="text" 
+                    id="chat-input" 
+                    placeholder="Type your message..." 
+                    class="flex-1 px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white text-sm"
+                    maxlength="500"
+                >
+                <button 
+                    id="send-button" 
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    disabled
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        
+        <div id="typing-indicator" class="hidden p-4">
+            <div class="flex">
+                <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-3">
+                    <div class="flex space-x-1">
+                        <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                        <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                        <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+class ChatBot {
+    constructor() {
+        this.apiKey = '';
+        this.agentId = '68a2032ada94f86e35e1602a';
+        this.userId = 'saurabhgithub@gmail.com';
+        this.sessionId = '68a2032ada94f86e35e1602a-nvrutcc2pnj';
+        this.apiUrl = 'https://agent-prod.studio.lyzr.ai/v3/inference/chat/';
+        
+        this.chatToggle = document.getElementById('chat-toggle');
+        this.chatWindow = document.getElementById('chat-window');
+        this.chatMessages = document.getElementById('chat-messages');
+        this.chatInput = document.getElementById('chat-input');
+        this.sendButton = document.getElementById('send-button');
+        this.typingIndicator = document.getElementById('typing-indicator');
+        this.chatIcon = document.getElementById('chat-icon');
+        this.closeIcon = document.getElementById('close-icon');
+        
+        this.isOpen = false;
+        this.init();
+    }
+    
+    init() {
+        this.chatToggle.addEventListener('click', () => this.toggleChat());
+        this.sendButton.addEventListener('click', () => this.sendMessage());
+        this.chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') this.sendMessage();
+        });
+        this.chatInput.addEventListener('input', () => this.validateInput());
+        
+        
+        document.addEventListener('click', (e) => {
+            if (this.isOpen && !document.getElementById('chatbot-container').contains(e.target)) {
+                this.toggleChat();
+            }
+        });
+    }
+    
+    toggleChat() {
+        this.isOpen = !this.isOpen;
+        
+        if (this.isOpen) {
+            this.chatWindow.classList.remove('hidden');
+            this.chatIcon.classList.add('hidden');
+            this.closeIcon.classList.remove('hidden');
+            this.chatInput.focus();
+        } else {
+            this.chatWindow.classList.add('hidden');
+            this.chatIcon.classList.remove('hidden');
+            this.closeIcon.classList.add('hidden');
+        }
+    }
+    
+    validateInput() {
+        const message = this.chatInput.value.trim();
+        this.sendButton.disabled = message.length === 0;
+    }
+    
+    async sendMessage() {
+        const message = this.chatInput.value.trim();
+        if (!message || !this.apiKey) return;
+        
+        
+        this.addMessage(message, 'user');
+        this.chatInput.value = '';
+        this.sendButton.disabled = true;
+        
+        
+        this.showTyping();
+        
+        try {
+            const response = await fetch(this.apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-api-key': this.apiKey
+                },
+                body: JSON.stringify({
+                    user_id: this.userId,
+                    agent_id: this.agentId,
+                    session_id: this.sessionId,
+                    message: message
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            this.hideTyping();
+            
+            
+            if (data.response) {
+                this.addMessage(data.response, 'bot');
+            } else {
+                this.addMessage('Sorry, I encountered an error. Please try again.', 'bot');
+            }
+            
+        } catch (error) {
+            console.error('Chat error:', error);
+            this.hideTyping();
+            this.addMessage('Sorry, I\'m having trouble connecting right now. Please try again later.', 'bot');
+        }
+    }
+    
+    addMessage(message, sender) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'flex ' + (sender === 'user' ? 'justify-end' : '');
+        
+        const bubble = document.createElement('div');
+        bubble.className = `rounded-lg p-3 max-w-xs ${
+            sender === 'user' 
+                ? 'bg-blue-600 text-white ml-auto' 
+                : 'bg-gray-100 dark:bg-gray-700'
+        }`;
+        
+        const text = document.createElement('p');
+        text.className = 'text-sm';
+        text.textContent = message;
+        
+        bubble.appendChild(text);
+        messageDiv.appendChild(bubble);
+        this.chatMessages.appendChild(messageDiv);
+        
+        
+        this.chatMessages.scrollTop = this.chatMessages.scrollHeight;
+    }
+    
+    showTyping() {
+        this.typingIndicator.classList.remove('hidden');
+        this.chatMessages.scrollTop = this.chatMessages.scrollHeight;
+    }
+    
+    hideTyping() {
+        this.typingIndicator.classList.add('hidden');
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    new ChatBot();
+});
+</script>
+        
+        
+        <script>
+            function updateExperienceDuration() {
+                const startDate = new Date('2015-04-27');
+                const currentDate = new Date();
+                
+                let years = currentDate.getFullYear() - startDate.getFullYear();
+                let months = currentDate.getMonth() - startDate.getMonth();
+                let days = currentDate.getDate() - startDate.getDate();
+                
+                if (days < 0) {
+                    months--;
+                    const lastDayOfPrevMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+                    days += lastDayOfPrevMonth;
+                }
+                
+                if (months < 0) {
+                    years--;
+                    months += 12;
+                }
+                
+                let experienceText = '';
+                if (years > 0) {
+                    experienceText += years + ' year' + (years > 1 ? 's' : '');
+                }
+                if (months > 0) {
+                    if (experienceText) experienceText += ', ';
+                    experienceText += months + ' month' + (months > 1 ? 's' : '');
+                }
+                if (days > 0) {
+                    if (experienceText) experienceText += ', ';
+                    experienceText += days + ' day' + (days > 1 ? 's' : '');
+                }
+                
+                
+                const experienceElement = document.getElementById('experience-duration');
+                if (experienceElement) {
+                    experienceElement.textContent = experienceText;
+                }
+                
+                
+                const aboutExperienceElement = document.getElementById('about-experience-duration');
+                if (aboutExperienceElement) {
+                    aboutExperienceElement.textContent = experienceText;
+                }
+                
+                
+                const experienceSummaryElement = document.getElementById('experience-summary');
+                if (experienceSummaryElement) {
+                    experienceSummaryElement.textContent = experienceText;
+                }
+            }
+            
+            document.addEventListener('DOMContentLoaded', updateExperienceDuration);
+        </script>
+    </body>
+</html> 
