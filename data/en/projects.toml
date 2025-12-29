@@ -1,4 +1,11 @@
 [[projects]]
+  title = "Zetlian"
+  description = "Zetlian-inspired dark Obsidian theme."
+  image = "/images/project_light.png"
+  link = "https://github.com/saurabhkankriya/Zetlian"
+  tech = "Open Source"
+
+[[projects]]
   title = "gafoor"
   description = "Semi-autonomous coding agent CLI that pairs pydantic_ai with MCP tooling for workspace-aware automation."
   image = "/images/project_light.png"
