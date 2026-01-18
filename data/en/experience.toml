@@ -2,11 +2,12 @@
   role = "Lead Software Engineer"
   company = "Coditas"
   period = "Jan 2026 - Present"
+  company_link = "https://coditas.com/"
 
 [[experience]]
   role = "Lead Generative AI Engineer"
   company = "Siemens Techology and Services"
-  company_link = "hhttps://www.siemens.com/global/en.html # Add company URL here
+  company_link = "https://www.siemens.com/global/en.html" # Add company URL here
   period = "Dec 2019 - Nov 2025"
   country = "India" # New field for region/country
   # description = "Longer description of the role..." # Optional detailed description
@@ -15,16 +16,16 @@
     "Collaborated with cross-functional teams.",
     "Led junior developers."
   ]
-  technologies = ["Go", "Docker", "Kubernetes", "React"]
+  technologies = ["Python", "Azure AI", "Langchain"]
 
 [[experience]]
   role = "Senior Software Engineer"
   company = "Nitor Infotech"
-  # company_link = "" # Omit or leave blank if no link
+  company_link = "https://www.nitorinfotech.com/" # Omit or leave blank if no link
   period = "Apr 2015 - Dec 2019"
   country = "India"
   responsibilities = [
     "Contributed to full-stack development projects.",
     "Participated in code reviews and agile sprints."
   ]
-  technologies = ["Python", "Django", "PostgreSQL"]
+  technologies = ["SSIS", "Data Engineering", "Tableau"]
