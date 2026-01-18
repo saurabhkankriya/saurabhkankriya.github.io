@@ -1,4 +1,11 @@
 [[projects]]
+  title = "Bridge Days"
+  description = "Plan holidays and bridge days with region-based calendars, suggestions, and ICS export. Live: https://bridgedays.vercel.app/"
+  image = "/images/project_light.png"
+  link = "https://github.com/saurabhkankriya/Bridge-Days"
+  tech = "React,TypeScript,Vite,TailwindCSS"
+
+[[projects]]
   title = "Zetlian"
   description = "Zetlian-inspired dark Obsidian theme."
   image = "/images/project_light.png"
