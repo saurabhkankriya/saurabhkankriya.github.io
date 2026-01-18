@@ -1,6 +1,6 @@
 [[projects]]
   title = "Bridge Days"
-  description = "Plan holidays and bridge days with region-based calendars, suggestions, and ICS export. Live: https://bridgedays.vercel.app/"
+  description = "Plan holidays and bridge days with region-based calendars, suggestions, and ICS export. Live: <a href=\"https://bridgedays.vercel.app/\">bridgedays.vercel.app</a>"
   image = "/images/project_light.png"
   link = "https://github.com/saurabhkankriya/Bridge-Days"
   tech = "React,TypeScript,Vite,TailwindCSS"
