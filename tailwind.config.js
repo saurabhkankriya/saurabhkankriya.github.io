@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Space Grotesk', 'sans-serif'],
+        sans: ['Aleo', 'serif'],
       },
       colors: {
         'bg-primary-light': colors.white,
@@ -19,8 +19,8 @@ module.exports = {
         'bg-primary-dark': '#121212',
         'bg-secondary-dark': '#1a1a1a',
         'bg-tertiary-dark': '#1a1a1a',  
-        'text-primary-dark': colors.neutral[100],
-        'text-secondary-dark': colors.neutral[400],
+        'text-primary-dark': '#ffffff',
+        'text-secondary-dark': '#ffffff',
         'border-primary-dark': colors.neutral[700],
         'accent-dark': colors.sky[500],
       },
