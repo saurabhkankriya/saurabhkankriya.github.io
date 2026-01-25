@@ -17,6 +17,28 @@
                 background-color: #FFFFFF; 
                 color: #1f2937; 
             }
+            /* Ensure task list checkboxes stay on the same line as text across all pages */
+            .prose ul.contains-task-list,
+            .prose ul.task-list {
+                list-style: none;
+                padding-left: 0;
+            }
+            .prose .task-list-item,
+            .prose .task-list-item > label {
+                list-style: none;
+                display: flex;
+                gap: 0.5rem;
+                align-items: flex-start;
+                margin-left: 0;
+            }
+            .prose .task-list-item input[type="checkbox"] {
+                margin-top: 0.35rem;
+                flex-shrink: 0;
+            }
+            .prose .task-list-item p {
+                margin: 0;
+                display: inline;
+            }
             html.dark, html.dark body {
                 background-color: #121212; 
                 color: #f3f4f6; 
