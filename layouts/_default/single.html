@@ -145,9 +145,13 @@
         margin: 1rem 0;
         padding-left: 1.5rem;
     }
-    .prose ul.contains-task-list {
+    .prose ul.contains-task-list,
+    .prose ul.task-list {
         list-style: none;
         padding-left: 0;
+    }
+    .prose ul.task-list {
+        margin: 1rem 0;
     }
     .prose ul {
         list-style: disc;
@@ -160,7 +164,8 @@
         list-style: decimal;
         list-style-position: outside;
     }
-    .prose .task-list-item {
+    .prose .task-list-item,
+    .prose .task-list-item > label {
         list-style: none;
         display: flex;
         gap: 0.5rem;
@@ -173,6 +178,7 @@
     }
     .prose .task-list-item p {
         margin: 0;
+        display: inline;
     }
     .prose li {
         margin: 0.5rem 0;
