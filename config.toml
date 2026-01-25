@@ -7,6 +7,14 @@ baseURL = "https://saurabhkankriya.github.io/"
 languageCode = 'en-us'
 title = 'Saurabh Jain'
 
+# Markdown rendering
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      taskList = true
+    [markup.goldmark.renderer]
+      unsafe = true
+
 # URL handling
 relativeURLs = false
 canonifyURLs = true
